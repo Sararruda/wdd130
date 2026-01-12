@@ -1,0 +1,125 @@
+/* Variáveis de cores e fonte */
+:root {
+  --body-font: Verdana, sans-serif;
+  --heading-font: Verdana, sans-serif;
+  --primary-color: #004080;   /* Azul escuro para títulos */
+  --accent1-color: #6a0dad;   /* Roxo para detalhes */
+  --accent2-color: #008000;   /* Verde para destaques e links */
+  --footer-bg-color: #004080; /* Azul escuro para rodapé */
+  --footer-text-color: #ffffff;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #f0f8ff; /* Fundo bem clarinho */
+}
+
+/* Centralizando layout */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* Títulos */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Margens e padding básicos */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* Menu de navegação */
+header nav a {
+  text-decoration: none;
+  color: var(--accent2-color);
+  margin-right: 16px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: var(--accent1-color);
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  padding: 16px;
+  text-align: center;
+}
+
+footer .socialmedia a img {
+  width: 32px;
+  margin: 0 8px;
+}
+
+/* Remove underline de links de imagens */
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+  background-color: rgba(0, 128, 0, 0.7); /* Verde semitransparente */
+  color: #fff;
+  font-size: 32px;
+  border-radius: 4px;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(106, 13, 173, 0.7); /* Roxo semitransparente */
+  color: #fff;
+  padding: 16px;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.hero article img {
+  float: right;
+  width: 100px;
+  margin-left: 16px;
+  border-radius: 4px;
+}
+
+/* Sections */
+section h2 {
+  color: var(--accent2-color);
+  margin-bottom: 8px;
+}
+
+section p {
+  color: var(--accent1-color);
+}
