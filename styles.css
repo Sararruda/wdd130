@@ -23,14 +23,14 @@
   }
 
   nav {
-    display: flex;
-    gap: 20px;
+    background-color: var(--green);
+    padding: 10px;
   }
 
   nav a {
-    color: var(--white);
-    font-weight: bold;
-    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
   }
 
   nav a:hover {
@@ -119,4 +119,7 @@
   main img {
     width: 150px;
     height: auto;
+    border: 1px solid #333;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
