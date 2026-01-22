@@ -1,0 +1,72 @@
+:root {
+    --purple: #5b2d8b;
+    --green: #2f7d32;
+    --light-bg: #f4f4f4;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--green);
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Heading */
+h1 {
+    color: var(--purple);
+}
+
+/* Main image */
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #333;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Aside */
+aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #333;
+    padding: 10px;
+    background-color: var(--light-bg);
+    color: #000;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Paragraphs */
+p {
+    padding: 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    border-top: 5px solid var(--green);
+    text-align: center;
+}
