@@ -79,24 +79,19 @@ footer .socialmedia a img {
   text-decoration: none;
 }
 
-/* Hero section */
 /* HERO SECTION */
 .hero {
   position: relative;
   width: 100%;
-  height: 320px;
+  height: 300px;
   overflow: hidden;
-  border-radius: 8px;
-  margin-top: 16px;
   margin-bottom: 32px;
 }
 
-/* imagem de fundo */
-.hero img {
+.hero > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 /* título */
@@ -104,30 +99,30 @@ footer .socialmedia a img {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 14px;
+  padding: 12px;
   text-align: center;
-  font-size: 26px;
-  background-color: rgba(0, 0, 0, 0.55);
-  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 24px;
 }
 
-/* texto da missão (SEM imagem dentro) */
+/* article com missão */
 .hero article {
   position: absolute;
   bottom: 20px;
   left: 20px;
   max-width: 320px;
-  padding: 14px;
-  background-color: rgba(0, 0, 0, 0.65);
-  color: #ffffff;
-  border-radius: 6px;
-  font-size: 14px;
-  line-height: 1.4;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
 }
 
-/* REMOVEMOS imagem pequena dentro do article */
+/* IMAGEM DA PESSOA FELIZ (OBRIGATÓRIA) */
 .hero article img {
-  display: none;
+  float: right;
+  width: 70px;
+  margin-left: 10px;
+  border-radius: 4px;
 }
 
 /* Sections */
