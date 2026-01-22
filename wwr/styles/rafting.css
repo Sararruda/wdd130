@@ -1,11 +1,11 @@
 /* Variáveis de cores e fonte */
 :root {
-  --body-font: Arial, Helvetica, sans-serif;
-  --heading-font: Georgia, serif;
-  --primary-color: #004080;
-  --accent1-color: #6a0dad;
-  --accent2-color: #008000;
-  --footer-bg-color: #004080;
+  --body-font: "Segoe UI", Arial, sans-serif;
+  --heading-font: "Segoe UI", Arial, sans-serif;
+  --primary-color: #003366;
+  --accent1-color: #333;
+  --accent2-color: #006400;
+  --footer-bg-color: #003366;
   --footer-text-color: #ffffff;
 }
 
@@ -84,12 +84,13 @@ footer .socialmedia a img {
 .hero {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 320px;
   overflow: hidden;
   border-radius: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
+/* imagem de fundo */
 .hero img {
   width: 100%;
   height: 100%;
@@ -97,33 +98,35 @@ footer .socialmedia a img {
   display: block;
 }
 
+/* título */
 .hero h1 {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   text-align: center;
   font-size: 26px;
-  background-color: rgba(0, 64, 128, 0.75);
+  background-color: rgba(0, 0, 0, 0.55);
   color: #ffffff;
 }
 
+/* texto da missão (SEM imagem dentro) */
 .hero article {
   position: absolute;
-  bottom: 16px;
-  left: 16px;
-  width: 280px;
-  padding: 12px;
-  background-color: rgba(106, 13, 173, 0.75);
+  bottom: 20px;
+  left: 20px;
+  max-width: 320px;
+  padding: 14px;
+  background-color: rgba(0, 0, 0, 0.65);
   color: #ffffff;
   border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
+/* REMOVEMOS imagem pequena dentro do article */
 .hero article img {
-  float: right;
-  width: 80px;
-  margin-left: 10px;
-  border-radius: 4px;
+  display: none;
 }
 
 /* Sections */
