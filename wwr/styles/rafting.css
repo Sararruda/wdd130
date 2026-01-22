@@ -2,10 +2,14 @@
 :root {
   --body-font: Verdana, sans-serif;
   --heading-font: Verdana, sans-serif;
-  --primary-color: #004080;   /* Azul escuro para títulos */
-  --accent1-color: #6a0dad;   /* Roxo para detalhes */
-  --accent2-color: #008000;   /* Verde para destaques e links */
-  --footer-bg-color: #004080; /* Azul escuro para rodapé */
+  --primary-color: #004080;
+  /* Azul escuro para títulos */
+  --accent1-color: #6a0dad;
+  /* Roxo para detalhes */
+  --accent2-color: #008000;
+  /* Verde para destaques e links */
+  --footer-bg-color: #004080;
+  /* Azul escuro para rodapé */
   --footer-text-color: #ffffff;
 }
 
@@ -19,24 +23,31 @@
 /* Corpo do site */
 body {
   font-family: var(--body-font);
-  color: var(--accent1-color);
-  background-color: #f0f8ff; /* Fundo bem clarinho */
+  color: #333;
+  background-color: #f0f8ff;
+  /* Fundo bem clarinho */
 }
 
 /* Centralizando layout */
-header, main, footer {
+header,
+main,
+footer {
   width: 840px;
   margin: 0 auto;
 }
 
 /* Títulos */
-h1, h2 {
+h1,
+h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
 /* Margens e padding básicos */
-nav, p, section, article {
+nav,
+p,
+section,
+article {
   margin: 16px;
   padding: 8px;
 }
@@ -75,13 +86,34 @@ footer .socialmedia a img {
 .hero {
   position: relative;
   margin-bottom: 32px;
+  max-height: 450px;
+  overflow: hidden;
 }
 
 .hero img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  object-fit: cover;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(106, 13, 173, 0.85);
+  color: #fff;
+  padding: 16px;
+  border-radius: 6px;
+  width: 340px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hero article img {
+  float: right;
+  width: 100px;
+  margin-left: 16px;
+  border-radius: 4px;
 }
 
 .hero h1 {
@@ -90,28 +122,9 @@ footer .socialmedia a img {
   width: 100%;
   text-align: center;
   padding: 16px;
-  background-color: rgba(0, 128, 0, 0.7); /* Verde semitransparente */
+  background-color: rgba(0, 128, 0, 0.7);
   color: #fff;
   font-size: 32px;
-  border-radius: 4px;
-}
-
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: rgba(106, 13, 173, 0.7); /* Roxo semitransparente */
-  color: #fff;
-  padding: 16px;
-  border-radius: 4px;
-  width: 300px;
-}
-
-.hero article img {
-  float: right;
-  width: 100px;
-  margin-left: 16px;
-  border-radius: 4px;
 }
 
 /* Sections */
