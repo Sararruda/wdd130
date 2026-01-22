@@ -28,8 +28,9 @@ body {
 header,
 main,
 footer {
-  max-width: 840px;
+  max-width: 900px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 /* Títulos */
@@ -83,12 +84,12 @@ footer .socialmedia a img {
 .hero {
   position: relative;
   width: 100%;
-  height: 380px;
+  height: 300px;
   overflow: hidden;
   border-radius: 8px;
+  margin-bottom: 24px;
 }
 
-/* Hero background image */
 .hero img {
   width: 100%;
   height: 100%;
@@ -96,35 +97,32 @@ footer .socialmedia a img {
   display: block;
 }
 
-/* Hero title overlay */
 .hero h1 {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 16px;
+  padding: 12px;
   text-align: center;
-  font-size: 28px;
+  font-size: 26px;
   background-color: rgba(0, 64, 128, 0.75);
   color: #ffffff;
 }
 
-/* Hero article overlay */
 .hero article {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  width: 300px;
-  padding: 16px;
+  bottom: 16px;
+  left: 16px;
+  width: 280px;
+  padding: 12px;
   background-color: rgba(106, 13, 173, 0.75);
   color: #ffffff;
   border-radius: 6px;
 }
 
-/* Image inside hero article */
 .hero article img {
   float: right;
-  width: 90px;
-  margin-left: 12px;
+  width: 80px;
+  margin-left: 10px;
   border-radius: 4px;
 }
 
@@ -136,4 +134,5 @@ section h2 {
 
 section p {
   color: #333;
+  line-height: 1.6;
 }
