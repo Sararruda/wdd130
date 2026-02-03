@@ -21,7 +21,6 @@ body {
   font-family: var(--body-font);
   color: #333;
   background-color: #f0f8ff;
-  /* Fundo bem clarinho */
 }
 
 /* Centralizando layout */
@@ -33,27 +32,25 @@ footer {
   padding: 0 16px;
 }
 
-/* Títulos */
-h1,
-h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+/* HEADER GRID */
+header {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  margin-top: 20px;
 }
 
-/* Margens e padding básicos */
-nav,
-p,
-section,
-article {
-  margin: 16px;
-  padding: 8px;
+/* NAV FLEX */
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
-/* Menu de navegação */
+/* Menu links */
 header nav a {
   text-decoration: none;
   color: var(--accent2-color);
-  margin-right: 16px;
   font-weight: bold;
 }
 
@@ -61,22 +58,20 @@ header nav a:hover {
   color: var(--accent1-color);
 }
 
-/* Rodapé */
-footer {
-  background-color: var(--footer-bg-color);
-  color: var(--footer-text-color);
-  padding: 16px;
-  text-align: center;
+/* Títulos */
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
-footer .socialmedia a img {
-  width: 32px;
-  margin: 0 8px;
-}
-
-/* Remove underline de links de imagens */
-.socialmedia a {
-  text-decoration: none;
+/* Margens padrão */
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
 }
 
 /* HERO SECTION */
@@ -106,7 +101,7 @@ footer .socialmedia a img {
   font-size: 24px;
 }
 
-/* article com missão */
+/* article missão */
 .hero article {
   position: absolute;
   bottom: 20px;
@@ -117,7 +112,7 @@ footer .socialmedia a img {
   color: #fff;
 }
 
-/* IMAGEM DA PESSOA FELIZ (OBRIGATÓRIA) */
+/* imagem pessoa feliz */
 .hero article img {
   float: right;
   width: 70px;
@@ -134,4 +129,28 @@ section h2 {
 section p {
   color: #333;
   line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  padding: 16px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* social icons */
+footer .socialmedia {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+footer .socialmedia img {
+  width: 32px;
+}
+
+.socialmedia a {
+  text-decoration: none;
 }
