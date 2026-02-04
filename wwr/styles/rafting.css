@@ -1,4 +1,4 @@
-/* Variáveis de cores e fonte */
+/* ================= VARIABLES ================= */
 :root {
   --body-font: "Segoe UI", Arial, sans-serif;
   --heading-font: "Segoe UI", Arial, sans-serif;
@@ -9,21 +9,21 @@
   --footer-text-color: #ffffff;
 }
 
-/* Reset básico */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Corpo do site */
+/* ================= BODY ================= */
 body {
   font-family: var(--body-font);
   color: #333;
   background-color: #f0f8ff;
 }
 
-/* Centralizando layout */
+/* ================= PAGE WIDTH ================= */
 header,
 main,
 footer {
@@ -32,22 +32,25 @@ footer {
   padding: 0 16px;
 }
 
-/* HEADER GRID */
+/* ================= HEADER (GRID) ================= */
 header {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 120px 1fr;
   align-items: center;
-  margin-top: 20px;
+  padding: 20px 0;
 }
 
-/* NAV FLEX */
+header img {
+  width: 90px;
+}
+
+/* ================= NAV (FLEX) ================= */
 header nav {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
 }
 
-/* Menu links */
 header nav a {
   text-decoration: none;
   color: var(--accent2-color);
@@ -58,127 +61,106 @@ header nav a:hover {
   color: var(--accent1-color);
 }
 
-/* Títulos */
+/* ================= HEADINGS ================= */
 h1,
 h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-/* Margens padrão */
-nav,
-p,
-section,
-article {
-  margin: 16px;
-  padding: 8px;
-}
-
-/* HERO SECTION */
+/* ================= HERO ================= */
 .hero {
   position: relative;
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-  margin-bottom: 32px;
+  margin: 40px 0;
 }
 
-.hero > img {
+.hero img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  display: block;
 }
 
-/* título */
 .hero h1 {
   position: absolute;
-  top: 0;
+  top: 10px;
   width: 100%;
-  padding: 12px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  font-size: 24px;
+  padding: 12px;
+  background: rgba(0, 0, 0, .6);
+  color: white;
 }
 
-/* article missão */
 .hero article {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  max-width: 320px;
+  background: rgba(0, 0, 0, .6);
+  color: white;
   padding: 12px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
+  max-width: 300px;
 }
 
-/* imagem pessoa feliz */
 .hero article img {
   float: right;
   width: 70px;
   margin-left: 10px;
-  border-radius: 4px;
 }
 
-/* Sections */
-section h2 {
-  color: var(--accent2-color);
-  margin-bottom: 8px;
+/* ================= HISTORY ================= */
+section:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 40px;
 }
 
-section p {
-  color: #333;
-  line-height: 1.6;
+/* ================= ADVENTURE ================= */
+section:last-of-type {
+  margin-bottom: 40px;
 }
 
-/* FOOTER */
-footer {
-  background-color: var(--footer-bg-color);
-  color: var(--footer-text-color);
-  padding: 16px;
+/* figures layout */
+.adventures {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.adventures figure {
+  flex: 1;
   text-align: center;
-  margin-top: 40px;
 }
 
-/* social icons */
+.adventures img {
+  width: 100%;
+}
+
+.adventures figcaption {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: var(--footer-bg-color);
+  color: white;
+  padding: 20px;
+}
+
+footer p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 footer .socialmedia {
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 12px;
 }
 
-footer .socialmedia img {
+footer img {
   width: 32px;
 }
 
 .socialmedia a {
   text-decoration: none;
-}
-
-/* ===== HEADER LAYOUT W04 ===== */
-
-header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  padding: 20px 0;
-}
-
-/* logo */
-header img {
-  width: 100px;
-}
-
-/* menu */
-header nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
-/* links */
-header nav a {
-  text-decoration: none;
-  color: var(--accent2-color);
-  font-weight: bold;
 }
