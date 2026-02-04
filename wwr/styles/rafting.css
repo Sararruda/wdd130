@@ -1,4 +1,5 @@
-/* ================= VARIABLES ================= */
+/* ================= ROOT VARIABLES ================= */
+
 :root {
   --body-font: "Segoe UI", Arial, sans-serif;
   --heading-font: "Segoe UI", Arial, sans-serif;
@@ -10,6 +11,7 @@
 }
 
 /* ================= RESET ================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,34 +19,28 @@
 }
 
 /* ================= BODY ================= */
+
 body {
   font-family: var(--body-font);
-  color: #333;
   background-color: #f0f8ff;
+  color: #333;
 }
 
-/* ================= PAGE WIDTH ================= */
-header,
-main,
-footer {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
+/* ================= HEADER ================= */
 
-/* ================= HEADER (GRID) ================= */
 header {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 16px;
   display: grid;
   grid-template-columns: 120px 1fr;
   align-items: center;
-  padding: 20px 0;
 }
 
 header img {
-  width: 90px;
+  width: 100px;
 }
 
-/* ================= NAV (FLEX) ================= */
 header nav {
   display: flex;
   justify-content: flex-end;
@@ -61,31 +57,36 @@ header nav a:hover {
   color: var(--accent1-color);
 }
 
-/* ================= HEADINGS ================= */
-h1,
-h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+/* ================= MAIN ================= */
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 /* ================= HERO ================= */
+
 .hero {
   position: relative;
-  margin: 40px 0;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 32px;
 }
 
 .hero img {
   width: 100%;
-  display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero h1 {
   position: absolute;
-  top: 10px;
+  top: 0;
   width: 100%;
-  text-align: center;
   padding: 12px;
-  background: rgba(0, 0, 0, .6);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
   color: white;
 }
 
@@ -93,68 +94,66 @@ h2 {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background: rgba(0, 0, 0, .6);
-  color: white;
+  max-width: 320px;
   padding: 12px;
-  max-width: 300px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
 }
 
 .hero article img {
   float: right;
   width: 70px;
   margin-left: 10px;
+  border-radius: 4px;
 }
 
-/* ================= HISTORY ================= */
-section:first-of-type {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  margin-bottom: 40px;
+/* ================= SECTIONS ================= */
+
+section {
+  margin: 24px 0;
 }
 
-/* ================= ADVENTURE ================= */
-section:last-of-type {
-  margin-bottom: 40px;
-}
-
-/* figures layout */
-.adventures {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.adventures figure {
-  flex: 1;
-  text-align: center;
-}
-
-.adventures img {
-  width: 100%;
-}
-
-.adventures figcaption {
-  margin-top: 6px;
-  font-size: 14px;
-}
-
-/* ================= FOOTER ================= */
-footer {
-  background: var(--footer-bg-color);
-  color: white;
-  padding: 20px;
-}
-
-footer p {
-  text-align: center;
+section h2 {
+  color: var(--accent2-color);
   margin-bottom: 10px;
 }
 
-footer .socialmedia {
+section p {
+  line-height: 1.6;
+}
+
+/* ================= ADVENTURES ================= */
+
+section:last-of-type {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+}
+
+figcaption {
+  font-size: 12px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  max-width: 900px;
+  margin: 40px auto 0;
+  padding: 16px;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  text-align: center;
+}
+
+footer nav.socialmedia {
   display: flex;
   justify-content: flex-end;
-  gap: 12px;
+  gap: 10px;
 }
 
 footer img {
@@ -163,26 +162,4 @@ footer img {
 
 .socialmedia a {
   text-decoration: none;
-}
-
-/* ADVENTURE GRID */
-
-section:last-of-type {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
-  align-items: center;
-}
-
-section:last-of-type h2,
-section:last-of-type p {
-  grid-column: 1 / -1;
-}
-
-section:last-of-type figure {
-  text-align: center;
-}
-
-section:last-of-type img {
-  width: 100%;
 }
