@@ -27,7 +27,7 @@ body {
 header,
 main,
 footer {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -163,4 +163,26 @@ footer img {
 
 .socialmedia a {
   text-decoration: none;
+}
+
+/* ADVENTURE GRID */
+
+section:last-of-type {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  align-items: center;
+}
+
+section:last-of-type h2,
+section:last-of-type p {
+  grid-column: 1 / -1;
+}
+
+section:last-of-type figure {
+  text-align: center;
+}
+
+section:last-of-type img {
+  width: 100%;
 }
