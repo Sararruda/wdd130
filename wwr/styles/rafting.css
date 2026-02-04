@@ -155,25 +155,30 @@ footer .socialmedia img {
   text-decoration: none;
 }
 
-/* ===== W04 HEADER LAYOUT ===== */
+/* ===== HEADER LAYOUT W04 ===== */
 
 header {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: auto 1fr;
   align-items: center;
+  padding: 20px 0;
 }
 
+/* logo */
 header img {
-  width: 120px;
+  width: 100px;
 }
 
-/* Nav horizontal */
+/* menu */
 header nav {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
 }
 
+/* links */
 header nav a {
-  padding: 8px 12px;
+  text-decoration: none;
+  color: var(--accent2-color);
+  font-weight: bold;
 }
