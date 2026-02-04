@@ -154,3 +154,26 @@ footer .socialmedia img {
 .socialmedia a {
   text-decoration: none;
 }
+
+/* ===== W04 HEADER LAYOUT ===== */
+
+header {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+}
+
+header img {
+  width: 120px;
+}
+
+/* Nav horizontal */
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+header nav a {
+  padding: 8px 12px;
+}
