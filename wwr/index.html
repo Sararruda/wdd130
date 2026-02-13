@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <meta charset="utf-8">
-  <title>Rafting Website Placeholder</title>
-</head>
-<body>
-  <h1>Rafting Project Placeholder</h1>
-  <p>This page will be completed in Week 03.</p>
-</body>
-</html>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Experience unforgettable white water rafting adventures with White Water Rafting Co. Explore our trips, guides, and outdoor experiences.">
+  <meta name="author" content="Sara Arruda">
+  <title>White Water Rafting – Home</title>
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="Rafting Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <img src="images/hero.jpg" alt="White water rafting adventure">
+      <h1>White Water Rafting Co.</h1>
+    </section>
+
+    <section class="newsletter">
+      <h2>Join Our Newsletter</h2>
+
+      <form>
+        <label for="newsletter-name">Name:</label>
+        <input type="text" id="newsletter-name" name="newsletter-name" required>
+
+        <label for="newsletter-email">Email:</label>
+        <input type="email" id="newsletter-email" name="newsletter-email" required>
+
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <section class="cta">
+      <h2>Ready for Your Next Adventure?</h2>
+      <p>Explore our exciting rafting trips and find the perfect experience for you.</p>
+      <a class="cta-button" href="trips.html">View Our Trips</a>
+    </section>
+
+    <section class="home-grid">
+      <div class="grid-item">
+        <img src="images/grid1.jpg" alt="Guided rafting adventures">
+        <h3>Expert Guides</h3>
+        <p>
+          Our experienced guides ensure a safe and thrilling rafting experience for
+          adventurers of all levels.
+        </p>
+      </div>
+
+      <div class="grid-item">
+        <img src="images/grid2.jpg" alt="Family friendly rafting trips">
+        <h3>Trips for Everyone</h3>
+        <p>
+          From calm family floats to intense white water rapids, we offer trips designed
+          for every type of explorer.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 White Water Rafting Co. | Sara Arruda</p>
+
+    <nav class="socialmedia">
+      <a href="#"><img src="images/facebook.png" alt="Facebook social media icon"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter social media icon"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram social media icon"></a>
+    </nav>
+  </footer>
+
+</body>
+
+</html>
